@@ -209,6 +209,9 @@ const card = (over: Partial<InboxCard> = {}): InboxCard => ({
 	kind: 'decision',
 	key: 'palette',
 	question: 'Navy or teal for the header?',
+	title: 'Navy or teal for the header?',
+	origin: null,
+	following: null,
 	askedAt: null,
 	owner: 'captain',
 	evidence: {
@@ -221,6 +224,7 @@ const card = (over: Partial<InboxCard> = {}): InboxCard => ({
 		board: null,
 		checks: null,
 		screenshots: [],
+		docs: [],
 		report: null
 	},
 	options: optionsFor('decision'),
